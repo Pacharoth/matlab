@@ -1,3 +1,4 @@
+  
 %4. Scalar equations: By using the variables created in exercise
 %1,calculate x ,y and z:
 %a.x=1/(1+exp(-a(a-15)/16))
