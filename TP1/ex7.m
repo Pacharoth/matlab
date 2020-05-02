@@ -11,4 +11,14 @@ cSub=cMat(2:8,3:9)
 %e.eVec with 5 elements by using rand. FInd all elements which are less
 %than 0.5 and then change them to 0 (use find)
 eVec(find(rand(1,5)<0.5))=1
-%f. create fVec=[1 2 .... 20](integer from 1 to 20) and then return 
+%f. create fVec=[1 2 .... 20](integer from 1 to 20) and then return
+%negative at even number like fvec=[1 -2 ...-20]
+fVec=[1:20];
+for i=1:20
+    if mod(fVec(i),2)==0
+        fVec(i)=-fVec(i);
+    else
+        fVec(i)=fVec(i);
+    end
+end
+fVec %print the output
