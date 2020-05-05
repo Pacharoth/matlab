@@ -44,14 +44,14 @@ fMat=floor(rand(6,4)+linspace(-5,5,4))
 %1,calculate x ,y and z:
 %4.a.x=1/(1+exp(-a(a-15)/16))
 x=1/(1+exp(-(a-15)/16))
-%4.b. y=(root squart a + root sqaure b)^pi
-y=(sqrt(a)+sqrt(b))^pi
+%4.b. y=(root squart a + b^(1/21))^pi
+y=(sqrt(a)+b^(1/21))^pi
 %4.c. z=log(R(c)sin((a*pi)/3)/cc bar where R real part of complex number, c
 %bar a conjugate of c(use real,conj,log)
 z= (log(real(c)*sin((a*pi)/3)))/(c*conj(c))%conj ex 2+3i go to 2-3i
 %z=log(2*sin(10*3.14/3))/(2+3i)(2-3i)
 
-%5.Vector equations: By using exercise 2 , solve the equation
+%5.Vector equations: By using exercise 3 , solve the equation
 %5.a.xVec=1/sqrt(2pi2.5^2)*exp(-cVec^2/2*2.5^2)
 xVec=1./(sqrt(2*pi*2.5^2).*exp((-cVec.^2)./(2*2.5^2)))
 %5.b.yVec yVec=sqrt(aVec'.^2+bVec.^2) (aVec^T signify aVec transpose)
@@ -81,7 +81,7 @@ eMat(1,:)=[1 1 1]
 cSub=cMat(2:8,3:9)
 %7.e eVec with 5 elements by using rand. FInd all elements which are less
 %than 0.5 and then change them to 0 (use find)
-eVec(find(rand(1,5)<0.5))=1
+eVec(find(rand(1,5)<0.5))=0
 %7.f. create fVec=[1 2 .... 20](integer from 1 to 20) and then return
 %negative at even number like fvec=[1 -2 ...-20]
 fVec=[1:20];
