@@ -45,7 +45,7 @@ fMat=floor(rand(6,4)+linspace(-5,5,4))
 %4.a.x=1/(1+exp(-a(a-15)/16))
 x=1/(1+exp(-(a-15)/16))
 %4.b. y=(root squart a + root sqaure b)^pi
-y=(sqrt(a)+sqrt(b))^pi
+y=(sqrt(a)+b^(1/21))^pi
 %4.c. z=log(R(c)sin((a*pi)/3)/cc bar where R real part of complex number, c
 %bar a conjugate of c(use real,conj,log)
 z= (log(real(c)*sin((a*pi)/3)))/(c*conj(c))%conj ex 2+3i go to 2-3i
