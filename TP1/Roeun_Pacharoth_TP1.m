@@ -38,7 +38,7 @@ dMat=nan(3,4)
 eMat=[13 -1 5;-22 10 -87]
 %3.f.fMat a matric 6*4 integer with random values between -5 and 5 (use rand
 %and ceil or floor
-fMat=floor(rand(6,4)+linspace(-5,5,4))
+fMat=floor(-5+(5+5)*rand(6,4))
 
 %4. Scalar equations: By using the variables created in exercise
 %1,calculate x ,y and z:
@@ -81,7 +81,8 @@ eMat(1,:)=[1 1 1]
 cSub=cMat(2:8,3:9)
 %7.e eVec with 5 elements by using rand. FInd all elements which are less
 %than 0.5 and then change them to 0 (use find)
-eVec(find(rand(1,5)<0.5))=0
+eVec=rand(1,5);
+eVec(find(eVec<0.5))=0
 %7.f. create fVec=[1 2 .... 20](integer from 1 to 20) and then return
 %negative at even number like fvec=[1 -2 ...-20]
 fVec=[1:20];
