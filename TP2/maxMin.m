@@ -5,9 +5,9 @@ c=[ 1 2 3 4 5]
 
 function [x,y] = maxMin1(a)
     i=1;
-    mini =-10000000;
-    maxi =10000000;
-    for i=1:length(a)
+    mini = a(1);
+    maxi =a(1);     %we use from array 1 to compare all value of array 
+    for i=1:length(a)               %I check reverse so It wont the same
        if maxi>a(i)
           maxi = a(i);
        end

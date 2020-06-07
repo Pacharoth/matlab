@@ -1,0 +1,2 @@
+we can use Length or size if we use size like [row col]=size(n)
+so it is the same as   length(a(:,row)) length(a(col,:))

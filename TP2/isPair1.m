@@ -4,10 +4,10 @@ user = input(message);
 isPair(user)
 function [] = isPair(data)
     if mod(data,2) ==0
-        fprintf('%d is Pair\n',data)
+        fprintf('%d is even number\n',data)
        
     else
-        fprintf('%d is not Pair\n',data)
+        fprintf('%d is odd number\n',data)
         
     end
 end
